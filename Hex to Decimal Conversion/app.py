@@ -1,6 +1,6 @@
 import os
 
-def hexToDecimal(hexNumber) -> int:
+def hexToDecimal(hexNumber) -> str:
     hexNumbers = {
                     '0': 0, '1': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9,
                     'A': 10, 'B': 11, 'C': 12, 'D': 13, 'E': 14, 'F': 15
@@ -25,9 +25,9 @@ def clearConsole():
         os.system('clear')
 
 
-convert = ''
+keyPress = ''
 
-while convert == '':      
+while keyPress == '':      
   
     user_input = input("Enter the Hex you wish to convert: ")
 
@@ -35,7 +35,7 @@ while convert == '':
 
     print(hexToDecimal(user_input.upper())+"\n") 
     
-    convert = input("Press Enter to convert another otherwise press any keys and then Enter...   ")
+    convert = input("Press Enter to convert another otherwise press any keys + Enter.   ")
     
     clearConsole()
 
