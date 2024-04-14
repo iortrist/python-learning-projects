@@ -11,7 +11,7 @@ def hexToDecimal(hexNumber) -> str:
 
     for char in hexNumber:
         if char not in hexNumbers:
-            return f'Invalid hex number. Please try again'
+            return f'Please enter a valid hex number.'
         else:
             decimalNumber = decimalNumber + (hexNumbers[char] * (16**hexLength))
             hexLength-= 1
@@ -35,7 +35,7 @@ while keyPress == '':
 
     print(hexToDecimal(user_input.upper())+"\n") 
     
-    convert = input("Press Enter to convert another otherwise press any keys + Enter.   ")
+    convert = input("Press 'Enter' continue otherwise press any keys + 'Enter':  ")
     
     clearConsole()
 
