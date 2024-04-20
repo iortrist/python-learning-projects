@@ -1,0 +1,2 @@
+## To-Do List Application:
+Create a command-line to-do list application where users can add, remove, and view tasks. You can use dictionaries or lists to store the tasks and implement functionalities such as adding tasks, marking tasks as completed, and saving tasks to a file.
